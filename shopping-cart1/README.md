@@ -21,7 +21,7 @@ Delete
 
 ## Printing ArrayList Methods
 
-1. For Loop
+1. **For Loop**
 
 ```
         for (int i = 0; i < cartContents.size(); i++){
@@ -31,7 +31,7 @@ Delete
 - Getting the length of the ArrayList using its size() method, up to which we need to retrieve the elements
 - Used get(i) method of the arraylist to fetch the data present at the indexes of the arraylist
 
-2. For-each Loop
+2. **For-each Loop**
 
 ```
         for (String str:cartContents){
@@ -40,7 +40,7 @@ Delete
 ```
 - Fetches every element from the arraylist object one by one
 
-3. List Interator
+3. **List Interator**
 
 ```
         ListIterator litr = cartContents.listIterator();
@@ -61,11 +61,11 @@ Delete
 - Provides methods to read text and password
   - If you read password using Console class, it will not be displayed to the user.
 
-- Associated Methods:
-  - Printwriter writer: Retrieves the unique PrintWriter object associated with this console.
-  - Reader reader: Retrieves the unique Reader object associated with this console.
-  - Console format: Writes a formatted string to this console's output stream using the specified format string and arguments
-  - Console printf: Convenience method to write a formatted string to the console's output stream using the specified format string and arguments
-  - readLine: Provides a formatted prompt, then reads a single line of text from the console.
-  - readPassword: Provides a formatted prompt, then reads a password or passphrase from the console with echoing disabled
-  - flush: Flushes the console and forces any buffered output to be written immediately.
+**Associated Methods**:
+- Printwriter writer: Retrieves the unique PrintWriter object associated with this console.
+- Reader reader: Retrieves the unique Reader object associated with this console.
+- Console format: Writes a formatted string to this console's output stream using the specified format string and arguments
+- Console printf: Convenience method to write a formatted string to the console's output stream using the specified format string and arguments
+- readLine: Provides a formatted prompt, then reads a single line of text from the console.
+- readPassword: Provides a formatted prompt, then reads a password or passphrase from the console with echoing disabled
+- flush: Flushes the console and forces any buffered output to be written immediately.
