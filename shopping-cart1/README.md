@@ -4,11 +4,20 @@ Write a Java console program that allows a user to add, remove and list the cont
 
 You are to implement the following commands:
 
-[] List - list the contents of the cart. If the cart is empty, print an appropriate message. The contents of the cart should be numbered when you are listing them
+List:
 
-[] Add - Add one or more items to the cart. Multiple items are separated by a comma(,).
+- [X] list the contents of the cart. 
+- [X] If the cart is empty, print an appropriate message. 
+- [X] The contents of the cart should be numbered when you are listing them
 
-[] Delete - Delete an item from the cart based on the item's index (from the list command). If an incorrect index is provided, display an error message.
+Add 
+- [X] Add one or more items to the cart. 
+- [] Multiple items are separated by a comma(,).
+
+Delete
+- [] Delete an item from the cart based on the item's index (from the list command). 
+- [] If an incorrect index is provided, display an error message.
+
 
 ## Printing ArrayList Methods
 
