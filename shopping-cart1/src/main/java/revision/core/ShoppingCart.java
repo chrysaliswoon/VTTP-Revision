@@ -54,8 +54,15 @@ public class ShoppingCart {
   }
 
   public void add(String items) {
-    this.cartContents.add(items);
-    System.out.printf("Adding %s to the cart \n", items);
+    String[] itemList = items.split(",");
+    for (int i = 0; i < itemList.length; i++) {
+      if (cartContents.contains(itemList[i])) {
+        System.out.printf("Item exists in the cart \n");
+      } else {
+        this.cartContents.add(itemList[i]);
+        System.out.printf("Adding %s to the cart \n", itemList[i]);
+      }
+    }
   }
 
   public void delete(String itemIndex) {

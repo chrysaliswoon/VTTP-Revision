@@ -1,6 +1,8 @@
 package revision.core;
 
 import java.io.*;
+import java.util.Arrays;
+import java.util.List;
 
 /*
 This contains all the start method to begin the shopping cart program using conditional statements
@@ -12,7 +14,7 @@ public class Sessions {
 
   public void start() {
     //? Declares a variable type of string called userInput
-    String userInput;
+    String userInput;    
 
     //? Instantiate a new shopping cart from the Shopping Cart class
     ShoppingCart cart = new ShoppingCart();
@@ -39,26 +41,24 @@ public class Sessions {
       String input = con.readLine("> ");
       //? Split returns an array of string
       String[] terms = input.split(" ");
-      String command = terms[0];
+      String command = terms[0].toLowerCase();
 
       //? Lists the items in the cart
       if (command.equals("list")) {
         cart.list();
-
         //? Reads a string and then adds it to the cart
       } else if (command.equals("add")) {
         userInput = con.readLine("Add an item: ");
-        cart.add(userInput);
-
+        userInput = userInput.replaceAll("\\s+","");
+        cart.add(userInput.toLowerCase());
         //? Delete the items in the cart
       } else if (command.equals("delete")) {
         userInput = con.readLine("Delete an item: ");
+        userInput = userInput.replaceAll("\\s+","");
         cart.delete(userInput);
-
       } else if (command.equals("exit")) {
         useCart = false;
         break;
-
       } else {
         System.err.println("Please enter a valid input");
       }

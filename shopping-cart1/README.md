@@ -12,12 +12,15 @@ List:
 
 Add 
 - [X] Add one or more items to the cart. 
-- [] Multiple items are separated by a comma(,).
+- [X] Multiple items are separated by a comma(,) and added to the list individually.
+- [X] If item already exists in the cart, don't add it.
 
 Delete
 - [X] Delete an item from the cart based on the item's index (from the list command). 
 - [X] If an incorrect index is provided, display an error message.
 
+User Interface
+- [X] Ignore whitespace and make all user input to lowercase
 
 ## Printing ArrayList Methods
 
