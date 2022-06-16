@@ -54,12 +54,17 @@ public class ShoppingCart {
   }
 
   public void add(String items) {
-    System.out.printf("Adding %s to the cart \n", items);
     this.cartContents.add(items);
+    System.out.printf("Adding %s to the cart \n", items);
   }
 
-  public void delete(String items) {
-    this.cartContents.remove(items);
-    System.out.printf("Deleting %s from the cart \n", items);
+  public void delete(String itemIndex) {
+    int item = Integer.parseInt(itemIndex);
+    if (item >= cartContents.size() || item < 0) {
+      System.out.printf("Index does not exist \n");
+    } else {
+      this.cartContents.remove(item);
+      System.out.printf("Deleting %d from the cart \n", item);
+    }
   }
 }

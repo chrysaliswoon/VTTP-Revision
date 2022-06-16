@@ -15,15 +15,15 @@ Add
 - [] Multiple items are separated by a comma(,).
 
 Delete
-- [] Delete an item from the cart based on the item's index (from the list command). 
-- [] If an incorrect index is provided, display an error message.
+- [X] Delete an item from the cart based on the item's index (from the list command). 
+- [X] If an incorrect index is provided, display an error message.
 
 
 ## Printing ArrayList Methods
 
 1. **For Loop**
 
-```
+```java
         for (int i = 0; i < cartContents.size(); i++){
             System.out.println(cartContents.get(i));
         }
@@ -33,7 +33,7 @@ Delete
 
 2. **For-each Loop**
 
-```
+```java
         for (String str:cartContents){
             System.out.println(str);
         }
@@ -42,7 +42,7 @@ Delete
 
 3. **List Interator**
 
-```
+```java
         ListIterator litr = cartContents.listIterator();
         while(litr.hasNext()){
            System.out.println(litr.next());
@@ -69,3 +69,26 @@ Delete
 - readLine: Provides a formatted prompt, then reads a single line of text from the console.
 - readPassword: Provides a formatted prompt, then reads a password or passphrase from the console with echoing disabled
 - flush: Flushes the console and forces any buffered output to be written immediately.
+
+## Add multiple items by comma [Explanation]
+
+
+
+
+## Delete item from cart using index [Explanation]
+
+- Convert the string to an int using Integer.parseInt() as the current console is getting a string while the parameter for the delete is an int.
+
+More info on parseInt: https://www.freecodecamp.org/news/java-string-to-int-how-to-convert-a-string-to-an-integer/
+
+- To check if the index exists, use arrayList.size to check if the index given is greater than or equal to the size. If it is, it doesn't exist.
+
+```java
+if(index >= myList.size() || index < 0){
+  //index does not exists
+}else{
+ // index exists
+}
+```
+
+More info on removing item by index: https://stackoverflow.com/questions/2131802/arraylist-how-can-i-check-if-an-index-exists 

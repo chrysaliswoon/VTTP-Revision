@@ -47,12 +47,12 @@ public class Sessions {
 
         //? Reads a string and then adds it to the cart
       } else if (command.equals("add")) {
-        userInput = con.readLine("Please enter add an item: ");
+        userInput = con.readLine("Add an item: ");
         cart.add(userInput);
 
         //? Delete the items in the cart
       } else if (command.equals("delete")) {
-        userInput = con.readLine("Please enter add an item to delete: ");
+        userInput = con.readLine("Delete an item: ");
         cart.delete(userInput);
 
       } else if (command.equals("exit")) {
